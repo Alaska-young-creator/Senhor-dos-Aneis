@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Senhor dos Aneis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="musicas-carrossel">
+            <audio src="./src/mp3/The Grey Havens (feat. Sir James Galway).mp3" type="audio/mp3" class="musica ativa" id="musica0" autoplay loop>
+            </audio>
+            <audio src="./src/mp3/The Last Goodbye - Billy Boyd.mp3" type="audio/mp3" id="musica1" loop>
+            </audio>
+            <audio src="./src/mp3/Aragorn's Song (EnglishElvish Lyrics).mp3" type="audio/mp3" id="musica2" loop>
+            </audio>
+            <audio src="./src/mp3/Gollum's Song.mp3" type="audio/mp3" id="musica3" loop>
+            </audio>
+            <audio src="./src/mp3/The White Tree.mp3" type="audio/mp3" id="musica4" loop>
+            </audio>
+            <audio src="./src/mp3/The one ring theme.mp3" type="audio/mp3" id="musica5" loop>
+            </audio>
+            <audio src="./src/mp3/The Black Gate Opens (feat. Sir James Galway).mp3" type="audio/mp3" id="musica6" loop>
+            </audio>
+        </div>
+
+        <div class="carrossel">
+            <img class="imagem ativa" src="./src/imagens/Gandalf.jpg" alt="Gandalf">
+            <img class="imagem" src="./src/imagens/Legolas.jpg" alt="Legolas">
+            <img class="imagem" src="./src/imagens/Aragorn.jpg" alt="Aragorn">
+            <img class="imagem" src="./src/imagens/smigol.jpg" alt="Smeagol">
+            <img class="imagem" src="./src/imagens/Minas Tirith.jpg" alt="Minas Tirith">
+            <img class="imagem" src="./src/imagens/Rings.jpg" alt="O um Anel">
+            <img class="imagem" src="./src/imagens/Sauron.png" alt="Sauron">
+        </div>
+
+        <div class="conteudo">
+            <div class="informacoes ativa">
+                <h1 class="Gandalf">Gandalf</h1>
+
+                <p class="descricao">
+                    Gandalf o Branco
+					Quando retornei como Gandalf, o Branco, meu propósito tornou-se mais claro e minha força foi
+					renovada. Fui enviado de volta para guiar e liderar na luta contra as sombras de Sauron. A batalha
+					era iminente, e meu papel era unir os povos livres e garantir que o bem prevalecesse.
+                </p>
+            </div>
+
+            <div class="informacoes">
+                <h1 class="Legolas">Legolas</h1>
+
+                <p class="descricao">
+                    Legolas, o elfo de olhos atentos e habilidades inigualáveis com o arco, foi um companheiro valoroso
+					na nossa jornada. Sua agilidade e visão aguçada foram cruciais em muitas batalhas, e sua lealdade ao
+					grupo nunca vacilou.
+                </p>
+            </div>
+
+            <div class="informacoes">
+                <h1 class="Aragorn">Aragorn</h1>
+
+                <p class="descricao">
+                    Aragorn, o herdeiro dos tronos de Gondor e Arnor, é um líder nato, destinado a unir
+					os homens na luta final contra Sauron. Sua coragem e humildade fazem dele não só um rei, mas também
+					um amigo e companheiro digno de confiança.
+                </p>
+            </div>
+
+            <div class="informacoes">
+                <h1 class="Smeagol">Smeagol</h1>
+
+                <p class="descricao">
+                    Sméagol, uma criatura uma vez inocente, foi corrompido pelo poder do Um Anel,
+					transformando-se em Gollum. Ele é um exemplo trágico de como o Anel pode distorcer o espírito, e sua
+					dualidade entre o bem e o mal é um lembrete constante do perigo que enfrentamos.
+                </p>
+            </div>
+
+            <div class="informacoes">
+                <h1 class="Minas Tirith">Minas Tirith</h1>
+
+                <p class="descricao">
+                    Minas Tirith, a Cidade Branca, é o último baluarte dos homens contra as trevas que
+					se avizinham. Com suas muralhas imponentes e história grandiosa, é um símbolo de esperança e
+					resistência, mas também carrega o peso do destino de toda a Terra Média.
+                </p>
+            </div>
+
+            <div class="informacoes">
+                <h1 class="Rings">O um Anel</h1>
+
+                <p class="descricao">
+                    O Um Anel é a fonte do poder de Sauron, criado para dominar todos os outros. Ele
+					corrompe e consome aqueles que o possuem, e nossa missão de destruí-lo foi cheia de desafios, pois
+					sua influência é poderosa e insidiosa.
+                </p>
+            </div>
+
+            <div class="informacoes">
+                <h1 class="Sauron">Sauron</h1>
+
+                <p class="descricao">
+                    Sauron é a encarnação do mal na Terra Média, sempre à espreita, buscando dominar
+					todos sob sua vontade. Sua presença é sentida em cada sombra, e sua ambição de submeter o mundo ao
+					seu poder é o maior desafio que enfrentamos.
+                </p>
+            </div>
+
+            <div class="botoes-carrossel">
+                <button onclick="tocarMusica(0)" class="botao selecionado Gandalf">
+                    <img class="Gandalf" src="./src/imagens/Gandalf.jpg" alt="Gandalf">
+                </button>
+                <button onclick="tocarMusica(1)" class="botao Legolas">
+                    <img class="Legolas" src="./src/imagens/Legolas.jpg" alt="Legolas">
+                </button>
+                <button onclick="tocarMusica(2)" class="botao Aragorn">
+                    <img class="Aragorn" src="./src/imagens/Aragorn.jpg" alt="Aragorn">
+                </button>
+                <button onclick="tocarMusica(3)" class="botao Smeagol">
+                    <img class="Smeagol" src="./src/imagens/smigol.jpg" alt="Smeagol">
+                </button>
+                <button onclick="tocarMusica(4)" class="botao Minas Tirith">
+                    <img class="Minas Tirith" src="./src/imagens/Minas Tirith.jpg" alt="Minas Tirith">
+                </button>
+                <button onclick="tocarMusica(5)" class="botao Rings">
+                    <img class="Rings" src="./src/imagens/Rings.jpg" alt="Rings">
+                </button>
+                <button onclick="tocarMusica(6)" class="botao Sauron">
+                    <img class="Sauron" src="./src/imagens/Sauron.png" alt="Sauron">
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+    <script>
+        function tocarMusica(indice) {
+            pausarTodas();
+            var musica = document.getElementById('musica' + indice);
+            musica.play();
+        }
+
+        function pausarTodas() {
+            for (var i = 0; i < 7; i++) {
+                var musica = document.getElementById('musica' + i);
+                musica.pause();
+            }
+        }
+    </script>
+</body>
+
+</html>

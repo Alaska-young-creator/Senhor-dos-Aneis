@@ -1,0 +1,242 @@
+body {
+    font-family: "Oswald", sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.carrossel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.informacoes {
+    display: none;
+}
+
+.informacoes.ativa {
+    display: block;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.informacoes h1 {
+    font-size: 80px;
+    color: #ffffff;
+    margin-bottom: 80px;
+    letter-spacing: 12px;
+}
+
+.informacoes .nanook {
+    font-family: "nanook";
+    color: #f8bb64;
+    mix-blend-mode: difference;
+}
+
+.informacoes .lan {
+    font-family: "lan";
+    color: #4e0de7;
+    mix-blend-mode: difference;
+}
+
+.informacoes .nous {
+    font-family: "nous";
+    color: #d61b1b;
+    mix-blend-mode: difference;
+}
+
+.informacoes .ix {
+    font-family: "ix";
+    color: #9147e6;
+    mix-blend-mode: difference;
+}
+
+.informacoes .xipe {
+    font-family: "xipe";
+    color: #d289e0;
+    mix-blend-mode: difference;
+}
+
+.informacoes .qlipoth {
+    font-family: "qlipoth";
+    color: #f7a83b;
+    mix-blend-mode: difference;
+}
+
+.informacoes .yaoshi {
+    font-family: "yaoshi";
+    color: #3f8d1b;
+    mix-blend-mode: difference;
+}
+
+@font-face {
+    font-family: "nanook";
+    src: url(../fontes/Romanum.ttf);
+}
+
+@font-face {
+    font-family: "lan";
+    src: url(../fontes/Revamped.otf);
+}
+
+@font-face {
+    font-family: "nous";
+    src: url(../fontes/Wrongdelivery.ttf);
+}
+
+@font-face {
+    font-family: "ix";
+    src: url(../fontes/Drunkfonts.otf);
+}
+
+@font-face {
+    font-family: "xipe";
+    src: url(../fontes/Evelins.otf);
+}
+
+@font-face {
+    font-family: "qlipoth";
+    src: url(../fontes/Ancientmedium.ttf);
+}
+
+@font-face {
+    font-family: "yaoshi";
+    src: url(../fontes/Merrycle.otf);
+}
+
+
+.informacoes .descricao {
+    width: 49%;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 40px;
+    height: 300px;
+    overflow: auto;
+    padding-right: 15px;
+}
+
+.botoes-carrossel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes-carrossel .botao {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    /* Botão redondo */
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+.botao:hover {
+    transform: scale(1.2);
+}
+
+.botoes-carrossel .Gandalf {
+    width: 60px;
+    height: 60px;
+    opacity: 85%;
+    /* Botão redondo */
+    border-radius: 50%;
+}
+
+.botoes-carrossel .Legolas {
+    width: 60px;
+    height: 60px;
+    opacity: 85%;
+    /* Botão redondo */
+    border-radius: 50%;
+}
+
+.botoes-carrossel .Aragorn {
+    width: 60px;
+    height: 60px;
+    opacity: 85%;
+    /* Botão redondo */
+    border-radius: 50%;
+}
+
+.botoes-carrossel .Smeagol{
+    width: 60px;
+    height: 60px;
+    opacity: 85%;
+    /* Botão redondo */
+    border-radius: 50%;
+}
+
+.botoes-carrossel .Minas {
+    width: 60px;
+    height: 60px;
+    opacity: 85%;
+    /* Botão redondo */
+    border-radius: 50%;
+}
+
+.botoes-carrossel .Rings {
+    width: 60px;
+    height: 60px;
+    opacity: 85%;
+    /* Botão redondo */
+    border-radius: 50%;
+}
+
+.botoes-carrossel .Sauron {
+    width: 60px;
+    height: 60px;
+    opacity: 85%;
+    /* Botão redondo */
+    border-radius: 50%;
+}
+
+.botoes-carrossel .botao.selecionado {
+    transition: block;
+    transform: none;
+}
+
+.imagem {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+}
+
+.imagem.ativa {
+    display: block;
+    animation: mudarImagem 0.7s;
+}
+
+@keyframes mudarImagem {
+    from {
+        opacity: 0.85;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main:after {
+    content: "";
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 90%);
+    z-index: -1;
+}
+
+.musica.ativa {
+    display: none;
+}
